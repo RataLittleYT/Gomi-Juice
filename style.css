@@ -4,13 +4,29 @@
 }
 
 body{
-    background: rgb(255, 243, 234);
+    background-image: linear-gradient(135deg,
+     #00dffc, #ff0000, #bbff00, #52dd02, #fd493c,
+     #4583f5, #2da595);
+     background-size: 500%;
+     animation: fanimado 10s infinite;
+}
+
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
 .top-container{
     margin: 8px;
     border-radius: 20px;
-    background: #ed1c24;
+    background: #ed1c23;
 }
 
 .top-container ul li{
@@ -27,7 +43,7 @@ body{
     margin: 8px;
     height: 900px;
     border-radius: 30px;
-    background: #ed1c23;
+    background: #ed1c2379;
 }
 
 .container0{
